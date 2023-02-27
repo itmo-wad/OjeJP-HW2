@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="/static/CSS/profile.css">
+</head>
+<body>
+	<header>
+		 <h1>Profile</h1>
+      <p>Welcome, {{user.username }}!</p>
+	</header>
+	<main>
+		<div class="profile">
+			<div class="profile-pic">
+				<img src="https://via.placeholder.com/150" alt="Profile Picture">
+			</div>
+			<div class="profile-info">
+				<h2>{{user.username}}</h2>
+				<p>Email: {{user.email}}</p>
+				<p>Location: {{user.location}}</p>
+			</div>
+		</div>
+
+		 <div class="text-end">
+            <form method="post" action="logout">
+				<input type="submit" value="Sign Out" class="btn btn-danger">
+            </form> &nbsp;
+
+			<form >
+			<a href="/pwdupdate" class="">Update Password</a>
+				&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;
+					&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;
+					&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;
+				<a href="/updateprofile" class="">Update Profile</a>
+			</form>
+        </div>
+
+
+	</main>
+	<footer>
+		<p>&copy; 2023 Johnson</p>
+	</footer>
+</body>
+</html>
