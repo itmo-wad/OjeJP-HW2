@@ -19,3 +19,15 @@ Basic part: Implement authentication feature
  
  Challenging part:
     1)Implement notification, an active user will receive notification when a new account is created. (Not implemented)
+
+
+Prerequisites
+    1) Running MongoDB on localhost:27017
+    2) Install docker
+            docker pull mongodb (pull mongodb image to local system)
+             docker run --name mongodb -d -p 27023:27017 mongo (start container)
+              
+    3) Install docker-compass (GUI for mongodb)
+            Initialize connection with mongodb://localhost:27023
+
+requirements.txt
