@@ -26,7 +26,6 @@ Prerequisites
     2) Install docker
             docker pull mongodb (pull mongodb image to local system)
              docker run --name mongodb -d -p 27023:27017 mongo (start container)
-              
     3) Install docker-compass (GUI for mongodb)
             Initialize connection with mongodb://localhost:27023
 
